@@ -15,12 +15,12 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-      - run: ./reactjs-org.sh
+      - run: reactjs-org.sh
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.3.1
         with:
           name: reactjs-org
-          path: public
+          path: ./
           warn: Output a warning but do not fail the action
           error: Fail the action with an error message
           ignore: Do not output any warnings or errors, the action does not fail
