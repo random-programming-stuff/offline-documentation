@@ -5,4 +5,3 @@ yarn install
 yarn build
 
 cd public
-python -m http.server
